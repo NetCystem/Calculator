@@ -5,80 +5,268 @@
     android:layout_height="match_parent"
     tools:context="com.example.user.calculator.MainActivity">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:id="@+id/edit_texts">
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/number1"
-            android:layout_marginTop="10dp"
-            android:hint="@string/number1"
-            android:layout_weight="0.5"
-            android:layout_margin="5dp"
-            android:inputType="number"/>
-///my
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/number2"
-            android:layout_marginTop="10dp"
-            android:hint="@string/number2"
-            android:layout_weight="0.5"
-            android:layout_margin="5dp"
-            android:inputType="number"/>
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/equ"
+            android:id="@+id/txt"
             android:layout_marginTop="10dp"
             android:layout_weight="0.5"
             android:layout_margin="5dp"
-            />
-
+            android:inputType="textMultiLine" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edit_texts"
+        android:orientation="horizontal"
         android:gravity="center"
-        android:id="@+id/buttons"
+        android:layout_below="@+id/edit_texts"
+        android:id="@+id/box"
         >
 
-        <Button
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/sum"
-            android:hint="+"
-            />
+            android:id="@+id/buttons"
+            android:orientation="vertical"
+            android:layout_marginLeft="4dp"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/num7"
+                android:hint="7"
 
-        <Button
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/num4"
+                android:hint="4"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/num1"
+                android:hint="1"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/num0"
+                android:hint="0"
+                />
+        </LinearLayout>
+
+
+        //2
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/sub"
-            android:hint="-"
-            />
+            android:gravity="center"
+            android:id="@+id/buttons2"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            >
 
-        <Button
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/num8"
+                android:hint="8"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/num5"
+                android:hint="5"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/num2"
+                android:hint="2"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spot"
+                android:hint="."
+                />
+        </LinearLayout>
+
+        ///3
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/div"
-            android:hint="/"
-            />
+            android:gravity="center"
+            android:id="@+id/buttons3"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            >
 
-        <Button
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/num9"
+                android:hint="9"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/num6"
+                android:hint="6"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/num3"
+                android:hint="3"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/equal"
+                android:hint="="
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/mul"
-            android:hint="*"
-            />
+            android:gravity="center"
+            android:id="@+id/buttons4"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            >
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sum"
+                android:hint="+"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sub"
+                android:hint="-"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/div"
+                android:hint="/"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mul"
+                android:hint="*"
+                />
+        </LinearLayout>
     </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:id="@+id/edit_texts">-->
+    <!--<EditText-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/number1"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:hint="@string/number1"-->
+    <!--android:layout_weight="0.5"-->
+    <!--android:layout_margin="5dp"-->
+    <!--android:inputType="number"/>-->
+    <!--///my-->
+    <!--<EditText-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/number2"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:hint="@string/number2"-->
+    <!--android:layout_weight="0.5"-->
+    <!--android:layout_margin="5dp"-->
+    <!--android:inputType="number"/>-->
+
+    <!--<EditText-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/equ"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_weight="0.5"-->
+    <!--android:layout_margin="5dp"-->
+    <!--/>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/edit_texts"-->
+    <!--android:gravity="center"-->
+    <!--android:id="@+id/buttons"-->
+    <!--&gt;-->
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/sum"-->
+    <!--android:hint="+"-->
+    <!--/>-->
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/sub"-->
+    <!--android:hint="-"-->
+    <!--/>-->
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/div"-->
+    <!--android:hint="/"-->
+    <!--/>-->
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/mul"-->
+    <!--android:hint="*"-->
+    <!--/>-->
+
+    <!--</LinearLayout>-->
+
 
 
 </RelativeLayout>
+
+
+
