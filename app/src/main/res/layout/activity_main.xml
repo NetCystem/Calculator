@@ -28,8 +28,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_below="@+id/edit_texts"
+        android:layout_below="@+id/other_tools"
         android:id="@+id/box"
+        android:background="@drawable/button_bg_stroke"
         >
 
 
@@ -44,7 +45,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/num7"
-                android:hint="7"
+                android:text="7"
+                android:background="@drawable/button_bg_stroke"
 
                 />
 
@@ -52,21 +54,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/num4"
-                android:hint="4"
+                android:text="4"
+                android:background="@drawable/button_bg_stroke"
                 />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/num1"
-                android:hint="1"
+                android:text="1"
+                android:background="@drawable/button_bg_stroke"
                 />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/num0"
-                android:hint="0"
+                android:text="0"
+                android:background="@drawable/button_bg_stroke"
                 />
         </LinearLayout>
 
@@ -78,35 +83,38 @@
             android:gravity="center"
             android:id="@+id/buttons2"
             android:orientation="vertical"
-            android:layout_marginLeft="10dp"
             >
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/num8"
-                android:hint="8"
+                android:text="8"
+                android:background="@drawable/button_bg_stroke"
                 />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/num5"
-                android:hint="5"
+                android:text="5"
+                android:background="@drawable/button_bg_stroke"
                 />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/num2"
-                android:hint="2"
+                android:text="2"
+                android:background="@drawable/button_bg_stroke"
                 />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/spot"
-                android:hint="."
+                android:text="."
+                android:background="@drawable/button_bg_stroke"
                 />
         </LinearLayout>
 
@@ -117,36 +125,39 @@
             android:gravity="center"
             android:id="@+id/buttons3"
             android:orientation="vertical"
-            android:layout_marginLeft="10dp"
+
             >
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/num9"
-                android:hint="9"
+                android:text="9"
+                android:background="@drawable/button_bg_stroke"
                 />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/num6"
-                android:hint="6"
+                android:text="6"
+                android:background="@drawable/button_bg_stroke"
                 />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/num3"
-                android:hint="3"
+                android:text="3"
+                android:background="@drawable/button_bg_stroke"
                 />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/equal"
-                android:hint="="
-                android:background="@color/logicButtons"
+                android:text="="
+                android:background="@drawable/button_bg_stroke"
                 />
         </LinearLayout>
 
@@ -157,22 +168,24 @@
             android:gravity="center"
             android:id="@+id/buttons4"
             android:orientation="vertical"
-            android:layout_marginLeft="10dp"
+            android:background="@color/logicButtons"
             >
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/sum"
-                android:hint="+"
-                android:background="@color/logicButtons"
+                android:text="+"
+                android:textColor="@color/logicTextColor"
+                android:background="@drawable/button_bg_stroke"
                 />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/sub"
-                android:hint="-"
+                android:text="-"
+                android:textColor="@color/logicTextColor"
                 android:background="@drawable/button_bg_stroke"
                 
                 />
@@ -181,25 +194,42 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/div"
-                android:hint="/"
-                android:background="@color/logicButtons"
+                android:text="/"
+                android:textColor="@color/logicTextColor"
+                android:background="@drawable/button_bg_stroke"
                 />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/mul"
-                android:hint="*"
-                android:background="@color/logicButtons"
-                />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/reset"
-                android:text="C"
+                android:text="*"
+                android:textColor="@color/logicTextColor"
+                android:background="@drawable/button_bg_stroke"
                 />
         </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/other_tools"
+        android:layout_below="@+id/edit_texts">
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:layout_marginLeft="54dp"
+            android:background="@drawable/button_bg_stroke"
+
+            />
+
+
+
+
     </LinearLayout>
 </RelativeLayout>
 
